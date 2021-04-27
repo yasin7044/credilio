@@ -51,7 +51,7 @@
         <div>
           <div
             class="flex mb-4 justify-between items-center flex-1 flex-wrap"
-            v-for="(eachTask, index) in taskActive"
+            v-for="eachTask in taskActive"
             :key="eachTask.id"
           >
             <div style="flex: 3" class="flex items-baseline flex-shrink">
