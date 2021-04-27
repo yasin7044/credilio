@@ -52,7 +52,7 @@
           <div
             class="flex mb-4 justify-between items-center flex-1 flex-wrap"
             v-for="(eachTask, index) in taskActive"
-            :key="index"
+            :key="eachTask.id"
           >
             <div style="flex: 3" class="flex items-baseline flex-shrink">
               <input
@@ -120,6 +120,7 @@ export default {
   },
   computed: {
     taskActive() {
+      console.log('jo')
       if (this.activeClass === "all") {
         return this.taskArray;
       } else if (this.activeClass === "Active") {
